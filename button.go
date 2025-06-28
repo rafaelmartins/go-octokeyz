@@ -80,6 +80,11 @@ func (b *Button) String() string {
 	return b.id.String()
 }
 
+// GetID returns a ButtonID
+func (b *Button) GetID() ButtonID {
+	return b.id
+}
+
 func (b *Button) addHandler(h ButtonHandler) {
 	if h == nil {
 		return
